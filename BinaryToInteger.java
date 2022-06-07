@@ -6,7 +6,7 @@ public class BinaryToInteger {
 	
 	private static String str = JOptionPane.showInputDialog(null, "Would you like to convert a Binary to int or int to Binary(type int to start with int and binary to start with binary");
 
-	
+	// runs the program using other methods
 	public static void main(String[] args) {
 		if(str.equalsIgnoreCase("binary")) {
 			binaryToInt();
@@ -16,6 +16,7 @@ public class BinaryToInteger {
 		}
 	}
 
+	// uses algorithm to change an integer number given by the user to binary as long as it isbetween 0 and 255
 	private static void IntToBinary() {
 		boolean bool = true;
 		while(bool == true) {
@@ -56,6 +57,8 @@ public class BinaryToInteger {
 		}
 	}
 
+	
+	// uses algorithm to change a binary number given by the user to an integer as long as it is no more than 8 digits long
 	private static void binaryToInt() {
 		boolean bool = true;
 		boolean h = false;
